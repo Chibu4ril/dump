@@ -1,0 +1,1880 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Savings Products</title>
+        <style>.file-input-wrapper { overflow: hidden; position: relative; cursor: pointer; z-index: 1; }.file-input-wrapper input[type=file], .file-input-wrapper input[type=file]:focus, .file-input-wrapper input[type=file]:hover { position: absolute; top: 0; left: 0; cursor: pointer; opacity: 0; filter: alpha(opacity=0); z-index: 99; outline: 0; }.file-input-name { margin-left: 8px; }</style><link rel="stylesheet" type="text/css" href="resources/css/jquery-ui.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/bootstrap-responsive.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.icon-large.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/datepicker.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/datatables.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/TableTools.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/TableTools_JUI.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/select2.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/jstree.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/toastr.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/main.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/jchartfx.css">
+        <script type="text/javascript" src="resources/css/jquery.min.js.download"></script>
+        <script type="text/javascript" src="resources/css/jquery-ui.min.js.download"></script>
+        <script type="text/javascript" src="resources/css/bootstrap.min.js.download"></script>
+        <script type="text/javascript" src="resources/css/bootstrap-datepicker.js.download"></script>
+        <script type="text/javascript" src="resources/css/bootstrap-fileinput.js.download"></script>
+        <script type="text/javascript" src="resources/css/jquery.number.js.download"></script>
+        <script type="text/javascript" src="resources/css/jquery.dataTables.js.download"></script>
+        <script type="text/javascript" src="resources/css/ZeroClipboard.min.js.download"></script>
+        <script type="text/javascript" src="resources/css/TableTools.min.js.download"></script>
+        <script type="text/javascript" src="resources/css/jquery.form.min.js.download"></script>
+        <script type="text/javascript" src="resources/css/jquery.maskedinput.min.js.download"></script>
+        <script type="text/javascript" src="resources/css/select2.min.js.download"></script>
+        <script type="text/javascript" src="resources/css/spel2js.min.js.download"></script>
+        <script type="text/javascript" src="resources/css/moment.min.js.download"></script>
+        <script type="text/javascript" src="resources/css/underscore-min.js.download"></script>
+        <script type="text/javascript" src="resources/css/cleave.js.download"></script>
+        <script type="text/javascript" src="resources/css/currency.min.js.download"></script>
+        <script type="text/javascript" src="resources/css/toastr.min.js.download"></script>
+        <script type="text/javascript" src="resources/css/jquery.yii.js.download"></script>
+        <script type="text/javascript" src="resources/css/jquery.yiiactiveform.js.download"></script>
+        <script type="text/javascript" src="resources/css/jchartfx.system.js.download"></script>
+        <script type="text/javascript" src="resources/css/jchartfx.coreVector.js.download"></script>
+        <script type="text/javascript" src="resources/css/jchartfx.advanced.js.download"></script>
+        <script type="text/javascript" src="resources/css/jchartfx.annotation.js.download"></script>
+        <script type="text/javascript" src="resources/css/jchartfx.coreVector3d.js.download"></script>
+        <script type="text/javascript" src="resources/css/jchartfx.data.js.download"></script>
+        <script type="text/javascript" src="resources/css/jchartfx.ui.js.download"></script>
+        <script type="text/javascript" src="resources/css/jchartfx.vector.js.download"></script>
+
+<title>Musoni System - Savingsaccount Savings</title>
+    </head>
+
+    <body lang="en">
+      <script type="text/javascript" src="/mlite-frontend/scripts/script.js?v=1570616489"></script>
+      <script type="text/javascript" src="/mlite-frontend/scripts/modules/tableStorage.js?v=1570616489"></script>
+      <script type="text/javascript" src="/mlite-frontend/scripts/modules/standingInstruction.js?v=1570616489"></script>
+
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a class="brand" href="/demo/index.php">
+
+
+                <img src="/demo/images/logo_small.png" alt="Logo" />
+            </a>
+            <ul class="nav">
+                                    <li id="mliClients" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class=" icon-user"></i>&nbsp;<span style="float: right" class="visible-desktop">Clients</span>
+                        </a>
+                                                <ul class="dropdown-menu">
+                                                                <li id="mliListClients"><a href="/demo/index.php/Client/Clients"><i class=" icon-user"></i>&nbsp;Clients</a></li>
+                                                                  <li id="mliRegisterClients"><a href="/demo/index.php/Client/CreateClient"><i class="glyphicon-user-add"></i>&nbsp;Register Client</a></li>
+                                                                  <li id="mliTransferClient"><a href="/demo/index.php/Transferclient/Index"><i class="icon-user"></i>&nbsp;Transfer Client</a></li>
+                                                      </ul>
+                                            </li>
+                                    <li id="mliGroups" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="glyphicon-group"></i>&nbsp;<span style="float: right" class="visible-desktop">Groups</span>
+                        </a>
+                                                <ul class="dropdown-menu">
+                                                                <li id="mliListGroups"><a href="/demo/index.php/Group/Groups"><i class="glyphicon-group"></i>&nbsp;Groups</a></li>
+                                                                  <li id="centers"><a href="/demo/index.php/Centers/Active"><i class="glyphicon-group"></i>&nbsp;Centers</a></li>
+                                                                  <li id="mliCreateGroups"><a href="/demo/index.php/Group/CreateGroup"><i class="icon-plus"></i>&nbsp;Create Group</a></li>
+                                                                  <li id="mliCollectionSheet"><a href="/demo/index.php/Group/CollectionSheet"><i class="glyphicon-group"></i>&nbsp;Group Posting</a></li>
+                                                                  <li id="mliGroupOnly"><a href="/demo/index.php/Group/TransferGroup"><i class=" glyphicon-group"></i>&nbsp;Transfer Group</a></li>
+                                                      </ul>
+                                            </li>
+                                    <li id="mliProducts" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="glyphicon-bank"></i>&nbsp;<span style="float: right" class="visible-desktop">Products</span>
+                        </a>
+                                                <ul class="dropdown-menu">
+                                                                <li id="mliLoans"><a href="/demo/index.php/Loan/Index"><i class="glyphicon-credit"></i>&nbsp;Loans</a></li>
+                                                                  <li id="mliSavings"><a href="/demo/index.php/Savings/Index"><i class="glyphicon-credit"></i>&nbsp;Savings</a></li>
+                                                                  <li id="mliShare"><a href="/demo/index.php/Shares/Index"><i class="glyphicon-credit"></i>&nbsp;Shares</a></li>
+                                                                  <li id="mliStandingInstruction"><a href="/demo/index.php/Standinginstruction/Index"><i class="glyphicon-credit"></i>&nbsp;Standing Instruction</a></li>
+                                                                  <li id="mliFundsTransfer"><a href="/demo/index.php/Fundstransfer/Index"><i class="glyphicon-credit"></i>&nbsp;Funds Transfer</a></li>
+                                                                  <li id="mliLoanCalculator"><a href="/demo/index.php/Product/Calculator"><i class="glyphicon-credit"></i>&nbsp;Loan Calculator</a></li>
+                                                      </ul>
+                                            </li>
+                                    <li id="mliReports" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="glyphicon-charts"></i>&nbsp;<span style="float: right" class="visible-desktop">Reports</span>
+                        </a>
+                                                <ul class="dropdown-menu">
+                                                                <li id="mliClientReports"><a href="/demo/index.php/Report/ClientReports/Client"><i class="icon-user"></i>&nbsp;Client Reports</a></li>
+                                                                  <li id="mliGroupReports"><a href="/demo/index.php/Report/GroupReports/Group"><i class="glyphicon-group"></i>&nbsp;Group Reports</a></li>
+                                                                  <li id="mliPortfolioReports"><a href="/demo/index.php/Report/SavingsReports/Savings"><i class="glyphicon-credit"></i>&nbsp;Savings Reports</a></li>
+                                                                  <li id="mliLoansReports"><a href="/demo/index.php/Report/LoansReports/Branch"><i class="glyphicon-credit"></i>&nbsp;Loan Reports</a></li>
+                                                                  <li id="mliOrganisationReports"><a href="/demo/index.php/Report/OrganisationReports/Portfolio"><i class="icon-home"></i>&nbsp;Organisation Reports</a></li>
+                                                                  <li id="mliFinancialReports"><a href="/demo/index.php/Report/FinancialReports/Financial"><i class="glyphicon-credit"></i>&nbsp;Financial Reports</a></li>
+                                                                  <li id="mliReportMailingJob"><a href="/demo/index.php/Reportmailingjob/Index"><i class=" icon-file"></i>&nbsp;Report Scheduler</a></li>
+                                                                  <li id="mlDataExport"><a href="/demo/index.php/Dataexport/DataExports"><i class="icon-list-alt"></i>&nbsp;Data Export</a></li>
+                                                                  <li id="mliReportQueue"><a href="/demo/index.php/Report/Queue"><i class="icon-list-alt"></i>&nbsp;Report Queue</a></li>
+                                                      </ul>
+                                            </li>
+                                    <li id="mliAccounting" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="glyphicon-credit"></i>&nbsp;<span style="float: right" class="visible-desktop">Accounting</span>
+                        </a>
+                                                <ul class="dropdown-menu">
+                                                                <li id="mliChartsOfAccounts"><a href="/demo/index.php/Accounting/ChartsOfAccounts"><i class=""></i>&nbsp;Charts Of Accounts</a></li>
+                                                                  <li id="mliJournals"><a href="/demo/index.php/Accounting/Journals"><i class=""></i>&nbsp;Journals</a></li>
+                                                                  <li id="mliAccountingRules"><a href="/demo/index.php/Accountingrule/Index"><i class=""></i>&nbsp;Journal Templates</a></li>
+                                                                  <li id="mliJouralsReconciliation"><a href="/demo/index.php/Accounting/JournalsReconciliation"><i class=""></i>&nbsp;Reconciliation</a></li>
+                                                                  <li id="mliTeller"><a href="/demo/index.php/Tellers/Index"><i class=""></i>&nbsp;Teller Management</a></li>
+                                                                  <li id="mliSageThreeHundredExport"><a href="/demo/index.php/Accounting/SageThreeHundredExport"><i class=""></i>&nbsp;Accounting Export</a></li>
+                                                                  <li id="mliPeriodicAccrual"><a href="/demo/index.php/Accounting/PeriodicAccrual"><i class=""></i>&nbsp;Periodic Accrual</a></li>
+                                                                  <li id="mliClosePeriods"><a href="/demo/index.php/Accounting/ClosePeriods"><i class=""></i>&nbsp;Close Periods</a></li>
+                                                      </ul>
+                                            </li>
+                                    <li id="mliConfiguration" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="glyphicon-settings"></i>&nbsp;<span style="float: right" class="visible-desktop">Configuration</span>
+                        </a>
+                                                <ul class="dropdown-menu">
+                                                                <li id="mliUsers"><a href="/demo/index.php/User/Index"><i class=" icon-lock"></i>&nbsp;Access Management</a></li>
+                                                                  <li id="mliAudit"><a href="/demo/index.php/Audit/Audit"><i class="icon-list-alt"></i>&nbsp;Audit</a></li>
+                                                                  <li id="mliCreateProducts"><a href="/demo/index.php/Product/Index"><i class="glyphicon-briefcase"></i>&nbsp;Products</a></li>
+                                                                  <li id="mliOffice"><a href="/demo/index.php/Office/Offices"><i class=" icon-home"></i>&nbsp;Branches</a></li>
+                                                                  <li id="mliMmt"><a href="/demo/index.php/Mmt/Index"><i class="glyphicon-credit"></i>&nbsp;MMT Services</a></li>
+                                                                  <li id="mliSms"><a href="/demo/index.php/Smscampaign/Campaigns"><i class=" icon-file"></i>&nbsp;SMS Module</a></li>
+                                                                  <li id="mliEmail"><a href="/demo/index.php/Emailcampaign/Campaigns"><i class=" icon-file"></i>&nbsp;Email Module</a></li>
+                                                                  <li id="mliBlacklist"><a href="/demo/index.php/Blacklist/Blacklist"><i class=" icon-file"></i>&nbsp;Blacklist</a></li>
+                                                                  <li id="mliCreditReference"><a href="/demo/index.php/Creditreference/Index"><i class="icon-list-alt"></i>&nbsp;CRB</a></li>
+                                                                  <li id="mliSettings"><a href="/demo/index.php/Settings/Index"><i class="glyphicon-settings"></i>&nbsp;Advanced</a></li>
+                                                                  <li id="mliDatatable"><a href="/demo/index.php/Datatable/DataTables"><i class="icon-th-list"></i>&nbsp;Customisation</a></li>
+                                                      </ul>
+                                            </li>
+                                    <li id="mliAudits" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="icon-list-alt"></i>&nbsp;<span style="float: right" class="visible-desktop">Tasks</span>
+                        </a>
+                                                <ul class="dropdown-menu">
+                                                                <li id="mliMakerCheckers"><a href="/demo/index.php/Audit/MakerCheckers"><i class="icon-list-alt"></i>&nbsp;Pending Approval</a></li>
+                                                                  <li id="mliMakerPending"><a href="/demo/index.php/Audit/MakerPending"><i class="icon-list-alt"></i>&nbsp;My Actions</a></li>
+                                                      </ul>
+                                            </li>
+                            </ul>
+            <div class="pull-right" style="margin-top: 10px;">
+                <div class="dropdown" id="settingsBox">-
+    <a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="">
+        <i class="icon-user"></i> demo    </a>
+    <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
+        <li>
+            <a tabindex="-1" href="#changePasswordModal" data-toggle="modal">Change Password</a>
+        </li>
+        <li class="divider"></li>
+        <li>
+            <a id="siteLogoutButton" tabindex="-1" href="/demo/index.php/Site/Logout">
+                Logout            </a>
+        </li>
+    </ul>
+</div>
+                <div class="dropdown" id="langdrop">
+    <a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="">
+    	<img src="/mlite-frontend/images/icons/flags/en.png" alt="EN" />    </a>
+    <span style="max-height: auto;" class="dropdown-menu musoni-pull-right-lang" role="menu" aria-labelledby="dLabel">
+        <form action="/demo/index.php/Savings/SavingsAccount/3" method="post">            <span id="lang"><input value="en" id="lang_0" checked="checked" type="radio" name="lang" /> <label for="lang_0"><img src="/mlite-frontend/images/icons/flags/en.png" alt="EN" /></label><br /><input value="nl" id="lang_1" type="radio" name="lang" /> <label for="lang_1"><img src="/mlite-frontend/images/icons/flags/nl.png" alt="NL" /></label><br /><input value="mm" id="lang_2" type="radio" name="lang" /> <label for="lang_2"><img src="/mlite-frontend/images/icons/flags/mm.png" alt="MM" /></label><br /><input value="fr" id="lang_3" type="radio" name="lang" /> <label for="lang_3"><img src="/mlite-frontend/images/icons/flags/fr.png" alt="FR" /></label><br /><input value="pt" id="lang_4" type="radio" name="lang" /> <label for="lang_4"><img src="/mlite-frontend/images/icons/flags/pt.png" alt="PT" /></label><br /><input value="zh" id="lang_5" type="radio" name="lang" /> <label for="lang_5"><img src="/mlite-frontend/images/icons/flags/cn.png" alt="ZH" /></label><br /><input value="es" id="lang_6" type="radio" name="lang" /> <label for="lang_6"><img src="/mlite-frontend/images/icons/flags/es.png" alt="ES" /></label></span>        </form>    </span>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $('#langdrop input:radio').addClass('input_hidden');
+        $('br').remove();
+    });
+</script>
+            </div>
+                            <div class="navbar-search pull-right" style="margin-right: 15px;">
+                    <input id="globalSearch" type="text" class="search-query" maxlength="30" placeholder="Search">
+                    <ul id="globalSearchOutput" class="dropdown-menu" style="left: -100px; display: none; width: 325px; overflow: hidden;"></ul>
+                </div>
+                    </div>
+    </div>
+</div>
+
+<div id="changePasswordModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="changePasswordModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="changePasswordModalLabel">Change Password</h3>
+    </div>
+    <div class="modal-body">
+        <form class="well form-horizontal" id="changePasswordForm" action="/demo/index.php/User/EditMyPassword" method="post">        <div class="control-group "><label class="control-label required" for="ChangePasswordForm_currentPassword">Current Password <span class="required">*</span></label><div class="controls"><input class="span3" name="ChangePasswordForm[currentPassword]" id="ChangePasswordForm_currentPassword" type="password" /><span class="help-inline error" id="ChangePasswordForm_currentPassword_em_" style="display: none"></span></div></div>        <div class="control-group "><label class="control-label required" for="ChangePasswordForm_password">Password <span class="required">*</span></label><div class="controls"><input class="span3" name="ChangePasswordForm[password]" id="ChangePasswordForm_password" type="password" /><span class="help-inline error" id="ChangePasswordForm_password_em_" style="display: none"></span></div></div>        <div class="control-group "><label class="control-label required" for="ChangePasswordForm_repeatPassword">Repeat Password <span class="required">*</span></label><div class="controls"><input class="span3" name="ChangePasswordForm[repeatPassword]" id="ChangePasswordForm_repeatPassword" type="password" /><span class="help-inline error" id="ChangePasswordForm_repeatPassword_em_" style="display: none"></span></div></div>        <button class="btn btn-primary" type="submit">Save</button>
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+        </form>    </div>
+</div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="row-fluid" id="content">
+
+<div>
+    <ul class="nav nav-tabs" id="indexTabs">
+            <li id="liSavings"><a href="/demo/index.php/Savings/Savings" >Savings</a></li>
+                <li id="liPendingApproval"><a href="/demo/index.php/Savings/PendingApproval" >Pending Approval</a></li>
+                <li id="liApproved"><a href="/demo/index.php/Savings/ApprovedSavings" >Pending Activation</a></li>
+                    <li id="liWithdrawn"><a href="/demo/index.php/Savings/WithdrawnSavings" >Withdrawn</a></li>
+                    <li id="liRejected"><a href="/demo/index.php/Savings/Rejected" >Rejected</a></li>
+                <li id="liClosed"><a href="/demo/index.php/Savings/ViewClosedSavingsAccount" >Closed</a></li>
+    </ul>
+<script type="text/javascript">
+    $(function () {
+        $("#mliProducts").addClass("active");
+        $("#mliSavings").addClass("active");
+    });
+</script></div>
+
+
+
+
+
+
+
+
+
+
+<span style="font-size: 24px;"><strong>000000003 - Compulsory Savings</strong></span>
+
+<div class="form-horizontal" style="margin-top: 7px; width: 100%">
+    <div style="float:left;width: 40%;">
+        <div class="control-group">
+            <label class="control-label">Status</label>
+            <div class="controls" style="margin-top: 4px;">
+                <span class="label label-success">
+                    Active                </span>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">Sub Status</label>
+            <div class="controls" style="margin-top: 4px;">
+                <span class="label label-success">
+                    None                </span>
+            </div>
+        </div>
+                <div class="control-group">
+
+            <label class="control-label">Client Name</label>
+            <div class="controls"  style="margin-top: 5px;">
+                                    <a class="" href="/demo/index.php/Client/Client/2"> Alexis Sanchez  (0002-0002-0002)</a>
+
+            </div>
+        </div>
+                <div class="control-group">
+            <label class="control-label">Group</label>
+            <div class="controls"  style="margin-top: 5px;">
+                                <span>Manchester United</span>
+                            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">Officer</label>
+            <div class="controls" style="margin-top: 5px;">
+                <span>Mourinho, Jose</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttonHolders" style="float:right; width: 40%; color:white;">
+        <div style="float:left;">
+                                <a href="#makeDepositModal" data-toggle="modal">
+                        <button class="btn btn-primary" type="button"><i class="glyphicon-white glyphicon-credit"></i>&nbsp;Make Deposit</button>
+                    </a>
+                    <a href="#makeWithdrawalModal"  data-toggle="modal">
+                      <button class="btn btn-danger" type="button"><i class="glyphicon-white glyphicon-debit"></i>&nbsp;Make Withdrawal</li></button></a>
+                                    <a href="#postSavingsInterestModal" data-toggle="modal">
+                        <button class="btn btn-success" type="button">&nbsp;Post Interest</button>
+                    </a>
+                        </div>
+
+                  <!--  <div class="btn-group" style="float:left; margin-left: 5px;">
+                      <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> More Actions <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li>
+                              <a href="#makeWithdrawalModal"  data-toggle="modal"><i class="icon icon-remove"></i>&nbsp;Make Withdrawal</a></li>
+                              <li><a href="#transferFundsModal"  data-toggle="modal" onclick="getLoansAndSavings(2,3,0)">
+                                <i class="icon icon-remove"></i>&nbsp;Transfer Funds                                </a>
+                            </li>
+
+                                                    <li>
+                                <a href="#savingsDocumentTemplateModal" data-toggle="modal">
+                                    <i class="glyphicon-book"></i>&nbsp;Documents                                </a>
+                            </li>
+
+
+
+
+
+                                                    <li>
+                                <a href="#closeSavingsAccountWithdrawalModal"  data-toggle="modal">
+                                    <i class="icon icon-eye-close"></i>&nbsp;Close                                </a>
+                            </li>
+                                                                        <li>
+                            <a href="/demo/index.php/Standinginstruction/CreateStandingInstruction/2/2"> --
+                            	<a href="#createStandingInstructionModal"  data-toggle="modal">
+                                <i class="icon glyphicon-credit"></i>&nbsp;Create Standing Instruction                            </a>
+                        </li>
+                    	                                                    <li>
+                                <a href="#updateLastActivityModal"  data-toggle="modal">
+                                    <i class="icon icon-edit"></i>&nbsp;Reset Last Activity                                </a>
+                            </li>
+                                                                                                                                    <li><a href="/demo/index.php/Savings/SavingsAccount/3?allTransactions=1">
+                                        <i class="icon-eye-open"></i>&nbsp;Show reversed system transactions</a>
+                                </li>
+
+                </ul>
+            </div>-->
+            </div>
+
+</div>
+
+
+<div class="tabbable" style="clear:both;">
+    <ul class="nav nav-tabs" id="savingsTab">
+        <li class="active"><a href="#terms" data-toggle="tab">Summary</a></li>
+        <li><a href="#charges" data-toggle="tab">Charges</a> </li>
+                    <li><a href="#transactions" id="showProductTransactionsTab" data-toggle="tab">Transactions</a></li>
+                    	<li><a href="#standingInstructions" data-toggle="tab">Standing Instructions</a></li>
+                <li><a href="#onHold" data-toggle="tab">On Hold</a></li>
+
+        <li><a href="#audit" data-toggle="tab">Audit</a></li>
+
+
+                <li class="survey-tab-class"><a href="#surveys-416" data-toggle="tab">Borrower Investigation </a></li>
+
+                </ul>
+    <div class="tab-content well form-horizontal" data-surveys='[{"name":"cct_AdditionalSavingsForm","columns":["Comment1","actions"],"categoryColumns":["surveyName","submittedon_date","submittedByUserName","actions"],"entityType":"m_savings_account","categoryId":416},{"name":"cct_RaoulTest","columns":["First_Name1","actions"],"categoryColumns":["surveyName","submittedon_date","submittedByUserName","actions"],"entityType":"m_savings_account","categoryId":416},{"name":"cct_SurveyForm","columns":["Comment11","actions"],"categoryColumns":["surveyName","submittedon_date","submittedByUserName","actions"],"entityType":"m_savings_account","categoryId":416}]' >
+                <div class="tab-pane active" id="terms">
+            <div class="tab-content">
+                <div class="row-fluid">
+                	<div class="span6">
+                		<div class="control-group">
+                            <label class="control-label"><strong>Current Balance</strong></label>
+                            <div class="controls" style="margin-top: 5px;">
+                                <span>0.00 KSh</span>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label"><strong>Last Deposit</strong></label>
+                            <div class="controls" style="margin-top: 5px;">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label"><strong>Last Withdrawal</strong></label>
+                            <div class="controls" style="margin-top: 5px;">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label"><strong>Quarterly Fee owed</strong></label>
+                            <div class="controls" style="margin-top: 5px;">
+                                <span></span>
+                            </div>
+                        </div>
+                	</div>
+                    <div class="span6">
+                    	<div class="control-group">
+                            <label class="control-label"><strong>Total Deposit</strong></label>
+                            <div class="controls" style="margin-top: 5px;">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label"><strong>Total Withdrawals</strong></label>
+                            <div class="controls" style="margin-top: 5px;">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label"><strong>Total Charges</strong></label>
+                            <div class="controls" style="margin-top: 5px;">
+
+                            	                            	                                <span></span>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label"><strong>Total Interest Posted</strong></label>
+                            <div class="controls" style="margin-top: 5px;">
+                                <span>0.00 KSh </span>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label"><strong>Total Interest Earned</strong></label>
+                            <div class="controls" style="margin-top: 5px;">
+                                <span> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-fluid">
+            		<div class="span6">
+                    	<div class="control-group">
+                            <label class="control-label"><strong>Product Name</strong></label>
+                            <div class="controls" style="margin-top: 5px;">
+                                <span>Compulsory Savings</span>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label"><strong>Category</strong></label>
+                            <div class="controls" style="margin-top: 5px;">
+                                <span>Compulsory</span>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label"><strong>Interest Compounding</strong></label>
+                            <div class="controls" style="margin-top: 5px;">
+                                <span>Daily</span>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label"><strong>Interest</strong></label>
+                            <div class="controls" style="margin-top: 5px;">
+                                <span>Monthly</span>
+                            </div>
+                        </div>
+
+                                            </div>
+                    <div class="span6">
+                    	<div class="control-group">
+                        <label class="control-label"><strong>Opening Balance</strong></label>
+                        <div class="controls" style="margin-top: 5px;">
+                            <span> KSh</span>
+                        </div>
+                    </div>
+
+
+                    <div class="control-group">
+                        <label class="control-label"><strong>Lock In Period</strong></label>
+                        <div class="controls" style="margin-top: 5px;">
+                            <span></span>&nbsp;<span></span>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label"><strong>Allow overdraft</strong></label>
+                        <div class="controls" style="margin-top: 5px;">
+                            <span>
+                                No                            </span>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                                                    <div class="control-group">
+                                <label class="control-label"><strong>Days until Dormancy</strong></label>
+                                <div class="controls" style="margin-top: 5px;">
+                                    <span>-189</span>&nbsp;<span>Days</span>
+                                </div>
+                            </div>
+                        <!--                        for savings account that are dormant-->
+
+                    </div>
+                </div>
+
+
+                <div style="clear: both;">
+                    <button class="btn btn-primary" type="button" onclick="$('#savingsTab li:eq(1) a').tab('show');">Next&nbsp;<i class="icon-white icon-arrow-right"></i></button>
+                </div>
+
+            </div>
+        </div>
+        <div class="tab-pane" id="charges">
+            <div class="tab-content">
+                <div class="control-group">
+                    <span style="font-size: 18px;"><strong>Charges</strong></span>
+                    <table class="table table-bordered" style="width: 60%; margin-top:10px;" id="chargesTable">
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Amount</th>
+                            <th>Collection Time</th>
+                            <th>Status</th>
+                        </tr>
+
+                        </thead>
+
+                    </table>
+
+                                        <div  style="float:left; margin-bottom: 10px; margin-top: 10px;">
+
+                        <input name="Savings[chargesString]" id="Savings_chargesString" type="hidden" value="" />                                <button type="button" data-account-id="3" class="btn btn-primary" id="addChargeBtn"><i class="icon-white icon-plus"></i>&nbsp;Add Charge</button>
+                                            </div>
+                    <div style="clear:both;">
+                        <button class="btn btn-primary" type="button" onclick="$('#savingsTab li:eq(0) a').tab('show');"><i class="icon-white icon-arrow-left"></i>&nbsp;Previous</button>
+                        <button class="btn btn-primary" type="button" onclick="$('#savingsTab li:eq(2) a').tab('show');">Next&nbsp;<i class="icon-white icon-arrow-right"></i></button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+                    <div class="tab-pane" id="transactions">
+                No transactions for this account could be found
+
+
+
+
+                <div style="clear: both;"></div>
+                <p>
+
+
+                    <a href="/demo/index.php/Report/DownloadReport/236/pdf?R_savingId=3">
+                        <button class="btn btn-primary" type="button"><i class="icon-file icon-white"></i>&nbsp;Mini-statement</button></a>
+                                                    <a href="/demo/index.php/Accounting/SavingsJournal/3">
+                        <button class="btn btn-primary" type="button"><i class="icon-file icon-eye-open icon-white"></i>&nbsp;View Saving Journals</button></a>
+
+                                </p>
+                <div style="clear: both;"></div>
+                <p>
+                <button class="btn btn-primary" type="button" onclick="$('#savingsTab li:eq(1) a').tab('show');"><i class="icon-white icon-arrow-left"></i>&nbsp;Previous</button>
+                <button class="btn btn-primary" type="button" onclick="$('#savingsTab li:eq(3) a').tab('show');">Next&nbsp;<i class="icon-white icon-arrow-right"></i></button>
+                </p>
+            </div>
+
+
+        <div class="tab-pane" id="onHold">
+            <div id="onHoldDisplay">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Amount</th>
+                            <th>Transaction Type</th>
+                            <th>Transaction Date</th>
+                            <th>Loan Client Name</th>
+                            <th>Loan Id</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            <button class="btn btn-primary" type="button" onclick="$('#savingsTab li:eq(3) a').tab('show');"><i class="icon-white icon-arrow-left"></i>&nbsp;Previous</button>
+            <button class="btn btn-primary" type="button" onclick="$('#savingsTab li:eq(5) a').tab('show');">Next&nbsp;<i class="icon-white icon-arrow-right"></i></button>
+
+        </div>
+
+        <div class="tab-pane" id="audit">
+            <div id="auditDisplay">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Action</th>
+                        <th>Date</th>
+                        <th>User</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                            <tr>
+                            <td>Savings Account created</td>
+                            <td>19-07-2018</td>
+                            <td>musoni</td>
+                        </tr>
+                                                                <tr>
+                            <td>Savings Account Approved</td>
+                            <td>09-10-2018</td>
+                            <td>Benfaj</td>
+                        </tr>
+                                                                <tr>
+                            <td>Savings Account Activated</td>
+                            <td>10-10-2018</td>
+                            <td>Benfaj</td>
+                        </tr>
+                                        </tbody>
+                </table>
+                <div style="margin-bottom: 10px;">
+                                            <a class="" href="/demo/index.php/Audit/Audit/?savingsId=3">
+                            <button class="btn btn-primary" type="button">Savings Audit&nbsp;<i class="icon-file icon-eye-open icon-white"></i></button>
+                        </a>
+                                    </div>
+
+            </div>
+            <div>
+                <button class="btn btn-primary" type="button" onclick="$('#savingsTab li:eq(4) a').tab('show');"><i class="icon-white icon-arrow-left"></i>&nbsp;Previous</button>
+            </div>
+
+        </div><!--end of audit tab--->
+
+        <div class="tab-pane" id="standingInstructions">
+		<div id="standingInstructionTable" style="margin-top: 20px;">
+
+<div id="yw0" class="grid-view">
+<table class="items table table-striped table-bordered table-condensed">
+<thead>
+<tr>
+<th id="yw0_c0">Name</th><th id="yw0_c1">From Client</th><th id="yw0_c2">From Account Number</th><th id="yw0_c3">To Client</th><th id="yw0_c4">To Account Number</th><th id="yw0_c5"></th></tr>
+</thead>
+<tbody>
+<tr><td colspan="6" class="empty"><span class="empty">No results found.</span></td></tr>
+</tbody>
+</table><div class="keys" style="display:none" title="/demo/index.php/Savings/SavingsAccount/3"></div>
+</div></div>
+
+<script type="text/javascript">
+    $(function () {
+    	    });
+</script>		</div>
+
+
+
+                <div class="tab-pane survey-tab" id="surveys-416" data-category-id="416" >
+
+
+    <a data-from-target="cct_AdditionalSavingsForm-form"    id="cct_AdditionalSavingsForm-btn"  href="#cct_AdditionalSavingsForm-form-modal" data-toggle="modal"  class="btn take-survey btn-primary"><i class="icon-white icon-plus"></i>&nbsp;Add Additional Savings Form</a>
+
+    <a data-from-target="cct_RaoulTest-form"    id="cct_RaoulTest-btn"  href="#cct_RaoulTest-form-modal" data-toggle="modal"  class="btn take-survey btn-primary"><i class="icon-white icon-plus"></i>&nbsp;Add Raoul Test</a>
+
+    <a data-from-target="cct_SurveyForm-form"    id="cct_SurveyForm-btn"  href="#cct_SurveyForm-form-modal" data-toggle="modal"  class="btn take-survey btn-primary"><i class="icon-white icon-plus"></i>&nbsp;Add Survey Form</a>
+
+
+
+        <table id="survey-416" class="table table-striped" data-client-id="3">
+            <thead>
+            <tr>
+
+               <th>Form Name</th>
+                <th>Submitted On Date</th>
+                <th>Submitted By</th>
+
+               <th class="dataTable-action-header">Actions</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+
+
+
+
+
+
+<div class="modal hide fade take-survey-form-modal " id="cct_AdditionalSavingsForm-form-modal">
+    <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>Additional Savings Form</h3>
+    </div>
+
+    <form data-survey-name="cct_AdditionalSavingsForm" data-allow-multiple-answers="" data-survey-category="416" data-survey-entity-type="m_savings_account" data-load-unique-entry-end-point="/demo/index.php/Surveys/UniqueEntry/3" method="post" data-display-conditions="{&quot;displayConditions&quot;:[{&quot;expression&quot;:&quot;&quot;,&quot;value&quot;:false,&quot;elmnt&quot;:&quot;#ASurvey_Comment1&quot;}],&quot;formulaExpressions&quot;:null}" data-form-field-val="{&quot;Comment1&quot;:{&quot;name&quot;:&quot;Comment1&quot;,&quot;value&quot;:&quot;&quot;,&quot;dataType&quot;:&quot;TEXT&quot;},&quot;dateFormat&quot;:{&quot;name&quot;:&quot;dateFormat&quot;,&quot;value&quot;:&quot;&quot;,&quot;dataType&quot;:&quot;HIDDEN&quot;},&quot;locale&quot;:{&quot;name&quot;:&quot;locale&quot;,&quot;value&quot;:&quot;&quot;,&quot;dataType&quot;:&quot;HIDDEN&quot;}}" class="form-horizontal" id="cct_AdditionalSavingsForm-form" action="/demo/index.php/Surveys/Submit/3">
+    <div class="modal-body">
+
+        <div class="control-group "><label class="control-label" for="ASurvey_Comment1">Comment</label><div class="controls"><textarea class=" display-condition-elemnt" data-form-table-name="cct_AdditionalSavingsForm" data-field-name="Comment1" data-data-type="TEXT" data-errorOptions="boo" name="ASurvey[Comment1]" id="ASurvey_Comment1"></textarea><span class="help-inline error" id="ASurvey_Comment1_em_" style="display: none"></span></div></div><input class="" data-form-table-name="cct_AdditionalSavingsForm" data-field-name="dateFormat" data-data-type="HIDDEN" data-errorOptions="boo" data-rule-required="1" value="dd-MM-yyyy" name="ASurvey[dateFormat]" id="ASurvey_dateFormat" type="hidden" /><input class="" data-form-table-name="cct_AdditionalSavingsForm" data-field-name="locale" data-data-type="HIDDEN" data-errorOptions="boo" data-rule-required="1" value="en_GB" name="ASurvey[locale]" id="ASurvey_locale" type="hidden" />
+    </div>
+
+
+    <div class="modal-footer">
+
+        <input type="hidden"  name="surveyName" value="cct_AdditionalSavingsForm"/>
+        <input type="hidden"  name="linkedToEntity" value="m_savings_account"/>
+
+        <button class="btn btn-primary" type="submit">Submit</button>
+        <a href="#" class="btn" data-dismiss="modal">Close</a>
+    </div>
+    </form></div>
+
+<div class="modal hide fade take-survey-form-modal " id="cct_RaoulTest-form-modal">
+    <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>Raoul Test</h3>
+    </div>
+
+    <form data-survey-name="cct_RaoulTest" data-allow-multiple-answers="" data-survey-category="416" data-survey-entity-type="m_savings_account" data-load-unique-entry-end-point="/demo/index.php/Surveys/UniqueEntry/3" method="post" data-display-conditions="{&quot;displayConditions&quot;:null,&quot;formulaExpressions&quot;:null}" data-form-field-val="{&quot;First_Name1&quot;:{&quot;name&quot;:&quot;First_Name1&quot;,&quot;value&quot;:&quot;&quot;,&quot;dataType&quot;:&quot;STRING&quot;},&quot;dateFormat&quot;:{&quot;name&quot;:&quot;dateFormat&quot;,&quot;value&quot;:&quot;&quot;,&quot;dataType&quot;:&quot;HIDDEN&quot;},&quot;locale&quot;:{&quot;name&quot;:&quot;locale&quot;,&quot;value&quot;:&quot;&quot;,&quot;dataType&quot;:&quot;HIDDEN&quot;}}" class="form-horizontal" id="cct_RaoulTest-form" action="/demo/index.php/Surveys/Submit/3">
+    <div class="modal-body">
+
+        <div class="control-group "><label class="control-label required" for="ASurvey_First_Name1">First Name <span class="required">*</span></label><div class="controls foo"><input class="" data-form-table-name="cct_RaoulTest" data-field-name="First_Name1" data-data-type="STRING" data-errorOptions="boo" data-rule-required="1" data-rule-maxlength="25" name="ASurvey[First_Name1]" id="ASurvey_First_Name1" type="text" maxlength="25" value="" /><span class="help-inline error" id="ASurvey_First_Name1_em_" style="display: none"></span></div></div><input class="" data-form-table-name="cct_RaoulTest" data-field-name="dateFormat" data-data-type="HIDDEN" data-errorOptions="boo" data-rule-required="1" value="dd-MM-yyyy" name="ASurvey[dateFormat]" id="ASurvey_dateFormat" type="hidden" /><input class="" data-form-table-name="cct_RaoulTest" data-field-name="locale" data-data-type="HIDDEN" data-errorOptions="boo" data-rule-required="1" value="en_GB" name="ASurvey[locale]" id="ASurvey_locale" type="hidden" />
+    </div>
+
+
+    <div class="modal-footer">
+
+        <input type="hidden"  name="surveyName" value="cct_RaoulTest"/>
+        <input type="hidden"  name="linkedToEntity" value="m_savings_account"/>
+
+        <button class="btn btn-primary" type="submit">Submit</button>
+        <a href="#" class="btn" data-dismiss="modal">Close</a>
+    </div>
+    </form></div>
+
+<div class="modal hide fade take-survey-form-modal " id="cct_SurveyForm-form-modal">
+    <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>Survey Form</h3>
+    </div>
+
+    <form data-survey-name="cct_SurveyForm" data-allow-multiple-answers="" data-survey-category="416" data-survey-entity-type="m_savings_account" data-load-unique-entry-end-point="/demo/index.php/Surveys/UniqueEntry/3" method="post" data-display-conditions="{&quot;displayConditions&quot;:[{&quot;expression&quot;:&quot;&quot;,&quot;value&quot;:false,&quot;elmnt&quot;:&quot;#ASurvey_Comment11&quot;}],&quot;formulaExpressions&quot;:null}" data-form-field-val="{&quot;Comment11&quot;:{&quot;name&quot;:&quot;Comment11&quot;,&quot;value&quot;:&quot;&quot;,&quot;dataType&quot;:&quot;TEXT&quot;},&quot;dateFormat&quot;:{&quot;name&quot;:&quot;dateFormat&quot;,&quot;value&quot;:&quot;&quot;,&quot;dataType&quot;:&quot;HIDDEN&quot;},&quot;locale&quot;:{&quot;name&quot;:&quot;locale&quot;,&quot;value&quot;:&quot;&quot;,&quot;dataType&quot;:&quot;HIDDEN&quot;}}" class="form-horizontal" id="cct_SurveyForm-form" action="/demo/index.php/Surveys/Submit/3">
+    <div class="modal-body">
+
+        <div class="control-group "><label class="control-label" for="ASurvey_Comment11">Comment</label><div class="controls"><textarea class=" display-condition-elemnt" data-form-table-name="cct_SurveyForm" data-field-name="Comment11" data-data-type="TEXT" data-errorOptions="boo" name="ASurvey[Comment11]" id="ASurvey_Comment11"></textarea><span class="help-inline error" id="ASurvey_Comment11_em_" style="display: none"></span></div></div><input class="" data-form-table-name="cct_SurveyForm" data-field-name="dateFormat" data-data-type="HIDDEN" data-errorOptions="boo" data-rule-required="1" value="dd-MM-yyyy" name="ASurvey[dateFormat]" id="ASurvey_dateFormat" type="hidden" /><input class="" data-form-table-name="cct_SurveyForm" data-field-name="locale" data-data-type="HIDDEN" data-errorOptions="boo" data-rule-required="1" value="en_GB" name="ASurvey[locale]" id="ASurvey_locale" type="hidden" />
+    </div>
+
+
+    <div class="modal-footer">
+
+        <input type="hidden"  name="surveyName" value="cct_SurveyForm"/>
+        <input type="hidden"  name="linkedToEntity" value="m_savings_account"/>
+
+        <button class="btn btn-primary" type="submit">Submit</button>
+        <a href="#" class="btn" data-dismiss="modal">Close</a>
+    </div>
+    </form></div>
+
+
+ <script>
+
+ $(document).ready(function (){
+   $('.modal-body').find('[data-data-type="DECIMAL"]').addClass('format-money');
+   FormatMoneyClass.doIt();
+});
+$(document).ready(function (){
+  $('.modal-body').find('[data-data-type="INTEGER"]').addClass('format-integer');
+  FormatIntegerClass.doIt();
+});
+
+</script>
+
+
+                </div>
+            <div id="confirm-delete-survey-modal" class="modal hide fade" >
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    </div>
+    <div class="modal-body">
+        <div class="alert alert-error">Are you sure you wish to delete this form?</div>
+
+    </div>
+    <div class="modal-footer">
+        <button id="confirm-delete-survey" class="btn btn-danger">Delete</button>
+        <a href="#" class="btn" data-dismiss="modal">Cancel</a>
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+
+
+
+
+            <div id="makeDepositModal" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3>Make Deposit</h3>
+    </div>
+    <div class="modal-body">
+
+        <span id="transactionDateError" class="alert alert-error" style="display: none">
+            Transaction date cannot be before accounts activation date        </span>
+        <span id="transferDateError" class="alert alert-error" style="display: none">
+            The client has joined the office after the date of this transaction, therefore transactions prior to this date are no longer allowed        </span>
+
+
+        <form class="form-horizontal" id="makeDepositForm" action="/demo/index.php/Savings/MakeDeposit" method="post">        <div class="control-group "><label class="control-label required" for="SavingsDeposit_amount">Amount <span class="required">*</span></label><div class="controls foo"><input class="format-money" name="SavingsDeposit[amount]" id="SavingsDeposit_amount" type="text" /><span class="help-inline error" id="SavingsDeposit_amount_em_" style="display: none"></span></div></div>        <div class="control-group "><label class="control-label required" for="SavingsDeposit_transactionDate">Transaction Date <span class="required">*</span></label><div class="controls foo"><input data-date-autoclose="1" class="datepicker cursorPointer" name="SavingsDeposit[transactionDate]" id="SavingsDeposit_transactionDate" type="text" value="14-10-2019" /><span class="help-inline error" id="SavingsDeposit_transactionDate_em_" style="display: none"></span></div></div>        <div class="control-group "><label class="control-label required" for="SavingsDeposit_paymentTypeId">Payment Type <span class="required">*</span></label><div class="controls"><select name="SavingsDeposit[paymentTypeId]" id="SavingsDeposit_paymentTypeId">
+<option value="226">https://www.bitsler.com/en</option>
+<option value="218">Mobile Money</option>
+<option value="219">xml</option>
+<option value="221">RTGS</option>
+<option value="224">Advance</option>
+<option value="227">Non_Dealer</option>
+<option value="228">Current Bank Account with AYA(Innya)</option>
+<option value="229">Current Bank Account with KBZ(Innya)</option>
+<option value="230">Bank Account</option>
+<option value="231">paypal</option>
+<option value="177">Cash</option>
+<option value="220">EFT</option>
+<option value="223">Cash1</option>
+<option value="225">Bank</option>
+</select><span class="help-inline error" id="SavingsDeposit_paymentTypeId_em_" style="display: none"></span></div></div>        <div class="control-group "><label class="control-label required" for="SavingsDeposit_receiptNumber">Receipt Number <span class="required">*</span></label><div class="controls"><textarea class="textareaResizing" name="SavingsDeposit[receiptNumber]" id="SavingsDeposit_receiptNumber"></textarea><span class="help-inline error" id="SavingsDeposit_receiptNumber_em_" style="display: none"></span></div></div>        <input name="SavingsDeposit[savingsAccountId]" id="SavingsDeposit_savingsAccountId" type="hidden" value="3" />        <div id="loadingContainer"></div>
+
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" id="submit-deposit" type="submit">Submit</button>
+        <button class="btn" type="button" data-dismiss="modal" aria-hidden="true">Close</button>
+        </form>    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        //setup before functions
+        let typingTimer;                //timer identifier
+        let doneTypingInterval = 1000;  //time in ms, 1 second
+        let minimumLengthForCheck = 3; //  minimum of entered characters before we check (to avoid overloading server)
+        let $receiptInput =  $("#makeDepositForm textarea[id*='receiptNumber']");
+        let $paymentTypeInput =  $("#makeDepositForm select[id*='paymentTypeId']");
+        let $form = ("#makeDepositForm");
+        let checkPerformedAfterStoppedEntering = false;
+        let checkPerformedAfterLeavingField = false;
+
+        //on keyup, start the countdown
+        $receiptInput.on('keyup', function () {
+            let len = $(this).val().length;
+            clearTimeout(typingTimer);
+            checkPerformedAfterLeavingField = false;
+            typingTimer = setTimeout(function (){
+                    if (len >= minimumLengthForCheck) {
+                        makeAjaxReceiptNumberCheck();
+                        checkPerformedAfterStoppedEntering = len;
+                    }
+                },
+                doneTypingInterval);
+        });
+        //on keydown, clear the countdown
+        $receiptInput.on('keydown', function () {
+            clearTimeout(typingTimer);
+        });
+
+        // when mouse leaves receipt field, run ajax check without delay!
+        $receiptInput.on('mouseleave', function () {
+            // we need to clear the countdown:
+            clearTimeout(typingTimer);
+            let len = $(this).val().length;
+            // check could have been done before - when person still haven't left a field,
+            // so we need to perform check only if quantity of entered symbols differs from one's were entered during (possible) first check:
+            if (
+                len >= minimumLengthForCheck
+                && len !== checkPerformedAfterStoppedEntering
+                && checkPerformedAfterLeavingField === false
+            ) {
+                makeAjaxReceiptNumberCheck();
+                checkPerformedAfterLeavingField = true;
+            }
+        });
+
+        // when we are changing payment type and length of receipt length is OK:
+        $paymentTypeInput.on('change', function () {
+            let len = $receiptInput.val().length;
+            if (len >= minimumLengthForCheck) makeAjaxReceiptNumberCheck();
+        });
+
+        function makeAjaxReceiptNumberCheck () {
+            // disabling submit button during execution of request:
+            $('#submit-deposit').prop('disabled', true);
+            let whereScriptUsed = $($form).attr('action').includes('Loan')
+                ? 'Loan'
+                : 'Savings';
+            let receiptNumber = $receiptInput.val();
+            let paymentTypeId =  $paymentTypeInput.val();
+            let url = `${BASE_URL_AJAX}/${whereScriptUsed}/CheckReceiptNumberExists`;
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: {
+                    receiptNumber: receiptNumber,
+                    paymentTypeId: paymentTypeId,
+                    checkForExistentTransaction: false
+                },
+                success: function(data) {
+                    let response = JSON.parse(data);
+                    if (response['warning'] === true) {
+                        $($receiptInput)
+                            .parent()
+                            .parent()
+                            .removeClass('success')
+                            .addClass('warning')
+                            .find('.error')
+                            .text(response['warningMessage'])
+                            .show()
+                    } else if  (response['warning'] === false) {
+                        $($receiptInput)
+                            .parent()
+                            .parent()
+                            .addClass('success')
+                            .find('.error')
+                            .text('')
+                            .hide();
+                    }
+                },
+                complete: function(){
+                    $('#submit-deposit').prop('disabled', false);
+                }
+            })
+        }
+    });
+
+
+
+    var bool = false;
+    $(function () {
+        $('#SavingsDeposit_transactionDate').datepicker({
+            format:DATE_FORMAT,
+            "endDate": new Date()
+        });
+
+    });
+    function makeDeposit(form,data,hasError){
+        if(!hasError && !bool){
+
+            $("#makeDepositModal button[type='submit']").prop("disabled",true);
+
+            $("#loadingContainer").html(loadImage);
+            var data_to_send = $('#makeDepositForm').serialize();
+            var url = $('#makeDepositForm').attr('action');
+            $.ajax({
+                url:url,
+                type:"POST",
+                data: data_to_send,
+                dataType:"json"
+
+            }).done(function(serverResponse){
+                    var response  = new ClassServerResponse(serverResponse);
+
+                    if(response.succeeded()){
+                                                // window.location.search = "?saveSuccess=1";
+                        var oldHref = window.location.href;
+
+                        var newHref= window.location.origin+window.location.pathname+"?saveSuccess=1"+window.location.hash;
+
+                        if(newHref==oldHref) {
+                            window.location.reload();
+                        } else  {
+                            window.location.href = newHref;
+                        }
+
+                        // window.location.reload();
+                                                $("#makeDepositModal button[type='submit']").prop("disabled",false);
+
+                    }else{
+                        MessageClass.showError(response.getErrors());
+                        $("#makeDepositModal button[type='submit']").prop("disabled",false);
+                    }
+
+                }).fail(function(){
+                    MessageClass.hide();
+                });
+
+            bool = true;
+
+        }
+        return false;
+    }
+</script>
+<div id="makeWithdrawalModal" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3>Make Withdrawal</h3>
+    </div>
+    <div class="modal-body">
+         <span id="lockIn" class="alert alert-error" style="display: none">
+         </span>
+        <span id="insufficientFunds" class="alert alert-error" style="display:none">
+            Insufficient account balance        </span>
+
+        <form class="form-horizontal" id="makeWithdrawalForm" action="/demo/index.php/Savings/MakeWithdrawal" method="post">        <div class="control-group "><label class="control-label required" for="SavingsWithdrawal_amount">Amount <span class="required">*</span></label><div class="controls foo"><input class="format-money" name="SavingsWithdrawal[amount]" id="SavingsWithdrawal_amount" type="text" /><span class="help-inline error" id="SavingsWithdrawal_amount_em_" style="display: none"></span></div></div>        <div class="control-group "><label class="control-label required" for="SavingsWithdrawal_transactionDate">Transaction Date <span class="required">*</span></label><div class="controls foo"><input data-date-autoclose="1" class="datepicker cursorPointer" name="SavingsWithdrawal[transactionDate]" id="SavingsWithdrawal_transactionDate" type="text" value="14-10-2019" /><span class="help-inline error" id="SavingsWithdrawal_transactionDate_em_" style="display: none"></span></div></div>        <div class="control-group "><label class="control-label required" for="SavingsWithdrawal_paymentTypeId">Payment Type <span class="required">*</span></label><div class="controls"><select name="SavingsWithdrawal[paymentTypeId]" id="SavingsWithdrawal_paymentTypeId">
+<option value="226">https://www.bitsler.com/en</option>
+<option value="218">Mobile Money</option>
+<option value="219">xml</option>
+<option value="221">RTGS</option>
+<option value="224">Advance</option>
+<option value="227">Non_Dealer</option>
+<option value="228">Current Bank Account with AYA(Innya)</option>
+<option value="229">Current Bank Account with KBZ(Innya)</option>
+<option value="230">Bank Account</option>
+<option value="231">paypal</option>
+<option value="177">Cash</option>
+<option value="220">EFT</option>
+<option value="223">Cash1</option>
+<option value="225">Bank</option>
+</select><span class="help-inline error" id="SavingsWithdrawal_paymentTypeId_em_" style="display: none"></span></div></div>        <div class="control-group "><label class="control-label required" for="SavingsWithdrawal_receiptNumber">Receipt Number <span class="required">*</span></label><div class="controls"><textarea class="textareaResizing" name="SavingsWithdrawal[receiptNumber]" id="SavingsWithdrawal_receiptNumber"></textarea><span class="help-inline error" id="SavingsWithdrawal_receiptNumber_em_" style="display: none"></span></div></div>        <input name="SavingsWithdrawal[savingsAccountId]" id="SavingsWithdrawal_savingsAccountId" type="hidden" value="3" />
+    </div>
+    <div class="modal-footer">
+        <div id="loadingContainerForWithdrawal"></div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+        <button class="btn" type="button" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+    </form></div>
+<script type="text/javascript">
+    $(function () {
+        $('#SavingsWithdrawal_transactionDate').datepicker({
+            format:DATE_FORMAT,
+            "endDate": new Date()
+        });
+    });
+    function makeWithdrawal(form,data,hasError){
+        if(!hasError){
+          //  $("#loadingContainerForWithdrawal").html(loadImage);
+            var data_to_send = $(form).serialize();
+            var url = $(form).attr('action');
+            MessageClass.showLoading();
+            $.ajax({
+                url:url,
+                type:"POST",
+                data: data_to_send,
+                dataType:"json"
+            }).done(function(serverResponse){
+
+                    var response = new ClassServerResponse(serverResponse);
+                    if(response.succeeded()){
+                                                // window.location.search = "?saveSuccess=1";
+                        var oldHref = window.location.href;
+
+                        var newHref= window.location.origin+window.location.pathname+"?saveSuccess=1"+window.location.hash;
+
+                        if(newHref==oldHref) {
+                            window.location.reload();
+                        } else  {
+                            window.location.href = newHref;
+                        }
+
+                        // window.location.reload();
+
+                    }else{
+                        MessageClass.showError(response.getErrors());
+                    }
+
+
+            }).fail(function(){
+                MessageClass.hide();
+            });
+
+        }
+        return false;
+    }
+</script>
+
+<div id="makeWriteoffModal" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3>Write-off overdraft</h3>
+    </div>
+    <div class="modal-body">
+
+        <form class="form-horizontal" id="makeWriteoffForm" action="/demo/index.php/Savings/MakeWriteoff" method="post">        <div class="control-group "><label class="control-label required" for="SavingsWithdrawal_amount">Amount <span class="required">*</span></label><div class="controls foo"><input class="format-money" name="SavingsWithdrawal[amount]" id="SavingsWithdrawal_amount" type="text" /><span class="help-inline error" id="SavingsWithdrawal_amount_em_" style="display: none"></span></div></div>        <div class="control-group "><label class="control-label required" for="SavingsWithdrawal_transactionDate">Transaction Date <span class="required">*</span></label><div class="controls foo"><input data-date-autoclose="1" class="datepicker cursorPointer" name="SavingsWithdrawal[transactionDate]" id="SavingsWithdrawal_transactionDate" type="text" value="14-10-2019" /><span class="help-inline error" id="SavingsWithdrawal_transactionDate_em_" style="display: none"></span></div></div>        <div class="control-group "><label class="control-label required" for="SavingsWithdrawal_receiptNumber">Receipt Number <span class="required">*</span></label><div class="controls"><textarea class="textareaResizing" name="SavingsWithdrawal[receiptNumber]" id="SavingsWithdrawal_receiptNumber"></textarea><span class="help-inline error" id="SavingsWithdrawal_receiptNumber_em_" style="display: none"></span></div></div>        <input name="SavingsWithdrawal[savingsAccountId]" id="SavingsWithdrawal_savingsAccountId" type="hidden" value="3" />
+    </div>
+    <div class="modal-footer">
+        <div id="loadingContainerForWithdrawal"></div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+        <button class="btn" type="button" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+    </form></div>
+<script type="text/javascript">
+    $(function () {
+        $('#SavingsWriteoff_transactionDate').datepicker({
+            format:DATE_FORMAT,
+            "endDate": new Date()
+        });
+    });
+    function makeWriteoff(form,data,hasError){
+        if(!hasError){
+          //  $("#loadingContainerForWithdrawal").html(loadImage);
+            var data_to_send = $(form).serialize();
+            var url = $(form).attr('action');
+            MessageClass.showLoading();
+            $.ajax({
+                url:url,
+                type:"POST",
+                data: data_to_send,
+                dataType:"json"
+            }).done(function(serverResponse){
+
+                    var response = new ClassServerResponse(serverResponse);
+                    if(response.succeeded()){
+                                                window.location.search = "?saveSuccess=1";
+
+                    }else{
+                        MessageClass.showError(response.getErrors());
+                    }
+
+
+            }).fail(function(){
+                MessageClass.hide();
+            });
+
+        }
+        return false;
+    }
+</script>
+    <div id="savingsDocumentTemplateModal" data-paper-size='[]' class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3>Saving Document</h3>
+    </div>
+    <div class="modal-body">
+         <span id="lockIn" class="alert alert-error" style="display: none">
+         </span>
+
+        <form class="form-horizontal" id="documentForm" action="/demo/index.php/Template/preview" method="post">        <input name="TemplateForm[clientId]" id="TemplateForm_clientId" type="hidden" value="2" />        <input name="TemplateForm[tenantIdentifier]" id="TemplateForm_tenantIdentifier" type="hidden" value="demo" />        <input name="TemplateForm[savingsaccountId]" id="TemplateForm_savingsaccountId" type="hidden" value="3" />        <div class="control-group "><label class="control-label required" for="TemplateForm_id">Template <span class="required">*</span></label><div class="controls"><select name="TemplateForm[id]" id="TemplateForm_id">
+<option value="">-- Select template --</option>
+<option value="1">Savings test</option>
+</select><span class="help-inline error" id="TemplateForm_id_em_" style="display: none"></span></div></div>
+
+    </div>
+    <div class="modal-footer">
+        <button  class="btn waive-loan-interest btn-primary" type="submit">Preview</button>
+        <button class="btn" type="button" data-dismiss="modal" aria-hidden="true">Close</button>
+        <div class="pull-right loadingContainer"></div>
+    </div>
+    </form></div>
+
+
+<div>
+
+
+<div id="documentPreviewModal" class="modal hide fade documentPreviewModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3>Document Preview</h3>
+    </div>
+    <form class="form-horizontal" id="documentForm" action="/demo/index.php/Template/DownloadPDF" method="post">    <div class="modal-body form-horizontal">
+        <div style="margin-bottom: 10px;"></div>
+
+        <div id="previewText" style="overflow: visible">
+
+        </div>
+        <input type="hidden" name="templateText" id="hiddenHtmlText"/>
+        <input type="hidden" name="fileName"  id="hiddenFileName"/>
+        <input type="hidden" name="paperSize"  id ="hiddenPaperSize" />
+
+        <div class="loadingImage" style="margin-top: 20px; display:none">
+            <div style="float:left; margin-left: 160px;">
+                <img src="/demo/images/icons/loading.gif" alt="" />            </div>
+        </div>
+    </div>
+    <div class="modal-footer documentPreviewFooter">
+        <span class="pull-right">
+           <button type="submit" class="btn btn-primary"><i></i><i class="icon-file icon-white"></i>&nbsp;Download to PDF</button>
+	   </span>
+        <a href="#" class="btn margin-right-4 " data-dismiss="modal">Close</a>
+
+    </div>
+    </form></div>
+
+
+
+<script type="text/javascript">
+</script>
+</div>
+
+<script type="application/javascript">
+    var displayName = "Alexis Sanchez";
+
+    function returnPaperSize(){
+        var paperSizeObject = $("#savingsDocumentTemplateModal").attr("data-paper-size");
+
+        var valueOfSelectOption = $("#TemplateForm_id").val();
+
+        $.each(JSON.parse(paperSizeObject), function(k,v){
+            if(valueOfSelectOption == k){
+                $("#hiddenPaperSize").val(v);
+                return;
+            }
+        });
+
+    }
+
+    function preview(form,data,hasError){
+        if(!hasError){
+            var data_to_send = $("#documentForm").serialize();
+            var url = $(form).attr('action');
+            console.log(url);
+            MessageClass.showLoading();
+            $.ajax({
+                url:url,
+                type:"POST",
+                data: data_to_send
+            }).done(function(result){
+                $("#documentPreviewModal").modal('show');
+                $("#previewText").html(result);
+                $("#hiddenHtmlText").val(result);
+                $("#hiddenFileName").val(displayName);
+                returnPaperSize();
+
+
+                MessageClass.hide();
+
+
+            }).fail(function(){
+                MessageClass.hide();
+            });
+
+        }
+
+    }
+</script><form class="form-horizontal" id="closeSavingsAccountForm" action="/demo/index.php/Savings/CloseSavingsAccount/3" method="post"><div class="modal hide fade" id="closeSavingsAccountWithdrawalModal">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>Close Savings Account</h3>
+    </div>
+    <div class="modal-body">
+
+        <div class="alert alert-error" id="closeSavingsNotAllowed" style="display: none">
+        </div>
+
+        <div class="control-group "><label class="control-label required" for="CloseSavingsAccount_closeDate">Close Date <span class="required">*</span></label><div class="controls foo"><input class="datepicker" data-date-autoclose="1" name="CloseSavingsAccount[closeDate]" id="CloseSavingsAccount_closeDate" type="text" value="14-10-2019" /><span class="help-inline error" id="CloseSavingsAccount_closeDate_em_" style="display: none"></span></div></div>        <div class="control-group "><label class="control-label required" for="CloseSavingsAccount_note">Note <span class="required">*</span></label><div class="controls"><textarea class="textareaResizing" name="CloseSavingsAccount[note]" id="CloseSavingsAccount_note"></textarea><span class="help-inline error" id="CloseSavingsAccount_note_em_" style="display: none"></span></div></div>        <div class="loadingContainer"></div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="submit">Submit</button>
+        <a href="#" class="btn" data-dismiss="modal">Close</a>
+    </div>
+    </form></div>
+
+
+<script type="text/javascript">
+    function closeSavingsAccount(form,data,hasError){
+        if(!hasError){
+            MessageClass.showLoading();
+            var data_to_send = $('#closeSavingsAccountForm').serialize();
+            var url = $(form).attr('action');
+            $.ajax({
+                url:url,
+                type:"POST",
+                data: data_to_send,
+                dataType:"json",
+                success:function(result){
+
+                    var response = new ClassServerResponse(result);
+                    if(response.succeeded()){
+                        MessageClass.hide();
+                        window.location.search = "?saveSuccess=1";
+                    }else{
+                        MessageClass.showError(response.getErrors());
+                    }
+                }
+            });
+        }
+        return false;
+    }
+</script>
+
+<div class="buttonHolders" style="float:left; width: 40%;">
+    <div style="float:left;">
+                        <a href="#makeDepositModal" data-toggle="modal">
+                    <button class="btn btn-primary" type="button"><i class="glyphicon-white glyphicon-credit"></i>&nbsp;Make Deposit</button>
+                </a>
+                </div>
+
+            <div class="btn-group" style="float:left; margin-left: 5px;">
+            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                More Actions                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+
+
+                                                            <li>
+                            <a href="#makeWithdrawalModal"  data-toggle="modal">
+                                <i class="icon icon-remove"></i>&nbsp;Make Withdrawal                            </a>
+                        </li>
+                                                                                    <li>
+                            <a href="#transferFundsModal"  data-toggle="modal" onclick="getLoansAndSavings(2,3,0)">
+                                <i class="icon icon-remove"></i>&nbsp;Transfer Funds                            </a>
+                        </li>
+
+                                                                        <li><a href="/demo/index.php/Savings/SavingsAccount/3?allTransactions=1">
+                                    <i class="icon-eye-open"></i>&nbsp;Show reversed system transactions</a>
+                            </li>
+
+                            </ul>
+        </div>
+    </div>
+
+<form class="form-horizontal" id="transferFundsForm" action="/demo/index.php/Savings/SavingsAccount/3" method="post">
+
+<div class="modal hide fade" id="transferFundsModal">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>Transfer Funds</h3>
+    </div>
+    <div class="modal-body">
+            <div id="lockedIn1" class="alert alert-error" style="display: none">
+            </div>
+            <div id="invalidAccountTransfer1" class="alert alert-error" style="display: none">
+            </div>
+            <div id="insufficientFunds1" class="alert alert-error" style="display: none;"></div>
+          <div id="generalError" class="alert alert-error" style="display: none;"></div>
+
+
+        <div id="loadAccountsAndTransfer">
+        </div>
+        <div id="transferForms" style="display:none">
+
+            <input name="AccountTransfer[fromClientId]" id="AccountTransfer_fromClientId" type="hidden" value="2" /><input name="AccountTransfer[toClientId]" id="AccountTransfer_toClientId" type="hidden" value="2" />
+            <input name="AccountTransfer[fromOfficeId]" id="AccountTransfer_fromOfficeId" type="hidden" value="2" />            <input value="2" name="AccountTransfer[fromAccountType]" id="AccountTransfer_fromAccountType" type="hidden" />            <input name="AccountTransfer[fromAccountId]" id="AccountTransfer_fromAccountId" type="hidden" value="3" />            <input name="AccountTransfer[toOfficeId]" id="AccountTransfer_toOfficeId" type="hidden" value="2" />            <input name="AccountTransfer[toAccountType]" id="AccountTransfer_toAccountType" type="hidden" />            <input name="AccountTransfer[toAccountId]" id="AccountTransfer_toAccountId" type="hidden" />            <input name="AccountTransfer[fromAccountNo]" id="AccountTransfer_fromAccountNo" type="hidden" value="000000003" />            <input name="AccountTransfer[toAccountNo]" id="AccountTransfer_toAccountNo" type="hidden" />            <div class="control-group "><label class="control-label required" for="AccountTransfer_transferDate">Transfer Date <span class="required">*</span></label><div class="controls foo"><input class="datepicker" data-date-autoclose="1" name="AccountTransfer[transferDate]" id="AccountTransfer_transferDate" type="text" value="14-10-2019" /><span class="help-inline error" id="AccountTransfer_transferDate_em_" style="display: none"></span></div></div>            <div class="control-group "><label class="control-label required" for="AccountTransfer_transferAmount">Transfer Amount <span class="required">*</span></label><div class="controls foo"><input class="format-money" name="AccountTransfer[transferAmount]" id="AccountTransfer_transferAmount" type="text" /><span class="help-inline error" id="AccountTransfer_transferAmount_em_" style="display: none"></span></div></div>            <div class="control-group "><label class="control-label required" for="AccountTransfer_transferDescription">Transfer Description <span class="required">*</span></label><div class="controls"><textarea class="textareaResizing" name="AccountTransfer[transferDescription]" id="AccountTransfer_transferDescription"></textarea><span class="help-inline error" id="AccountTransfer_transferDescription_em_" style="display: none"></span></div></div>        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="loadingContainer" style="float:left;"></div>
+                    <button type="submit" class="btn btn-primary">Transfer Funds</button>
+                <a href="#" class="btn" data-dismiss="modal">Close</a>
+    </div>
+    </form></div>
+
+
+<script type="text/javascript">
+    $(function (){
+        $("#AccountTransfer_transferDate").datepicker({
+            format:DATE_FORMAT
+        });
+    });
+
+
+
+
+    function showTransferFundsForm(accountId,accountType,toAccountNo){
+        $("#loadAccountsAndTransfer").hide();
+        $("#AccountTransfer_toAccountId").val(accountId);
+        $("#AccountTransfer_toAccountType").val(accountType);
+        $("#AccountTransfer_toAccountNo").val(toAccountNo);
+        $("#transferForms").show();
+    }
+
+
+    function getLoansAndSavings(clientId,savingId,isGroup)
+    {
+        $("#loadAccountsAndTransfer").html(loadImage);
+        $.ajax({
+            type: "POST",
+            url: BASE_URL_AJAX + "/Accounttransfer/ClientAccounts/",
+            data: { clientId: clientId ,savingId: savingId, isGroup:isGroup},
+            success: function (result) {
+                $("#loadAccountsAndTransfer").html(result);
+            }
+        });
+    }
+
+</script>
+<form class="form-horizontal" id="approveClientForm" action="/demo/index.php/Savings/PostInterest/3" method="post">    <div class="modal hide fade" id="postSavingsInterestModal">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3>Post Savings Account Interest</h3>
+        </div>
+                    <div class="modal-body">
+               <div><span>By posting the interest on this savings account, all interest accrued until today, that has not been posted yet, will be calculated and posted to the account and will be compounded into the outstanding balance</span></div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" type="submit">Submit</button>
+                <a href="#" class="btn" data-dismiss="modal">Close</a>
+            </div>
+            </div>
+</form><div class="modal hide fade" id="updateLastActivityModal">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>Reset Last Activity</h3>
+    </div>
+
+    <div class="modal-body">
+        <div class="alert alert-warn" style="">
+            Resetting last activity keeps the savings account from going inactive and removes "Inactive" or "Dormant" sub status from this account as if a transaction to or from this account were made.        </div>
+    </div>
+
+    <div class="modal-footer">
+        <a href="/demo/index.php/Savings/UpdateLastActivity/3"><button class="btn btn-warning">Update</button></a>
+        <a href="#" class="btn" data-dismiss="modal">Close</a>
+    </div>
+
+</div>
+
+
+<div id="addChargeDueDate" class="modal hide fade  form-horizontal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3>Add Charge</h3>
+    </div>
+    <div class="modal-body">
+         <span id="lockIn" class="alert alert-error" style="display: none">
+         </span>
+
+        <div class="control-group">
+            <label class="control-label" for="select2-chargesList-container">Select Charge</label>
+            <div class="controls">
+                                        <select name="chargesList" id="chargesList">
+<option value="4">Savings Inactivity Fee</option>
+<option value="90">PassBook-Charge</option>
+</select>                            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="amount">Amount</label>
+            <div class="controls">
+                    <input name="amount" class="format-money" size="16" type="text" id="amount">
+                    <span class="help-inline hide">Amount should be a numeric value </span>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="due-date">Posting Date</label>
+            <div class="controls">
+                <div class="input-append date" id="due-date-dp">
+                    <input name="dueDate" size="16" type="text" id="due-date" value="14-10-2019" readonly="readonly" style="cursor: pointer;"  onClick="$('.add-on').click(); return false;">
+                    <span class="add-on"><i class="icon-calendar"></i></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" id="submit-due-date" type="submit">Submit</button>
+        <button class="btn" type="button" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+
+</div>
+
+<div class="modal hide fade" id="createStandingInstructionModal">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>Create Standing Instruction</h3>
+    </div>
+    <form class="form-horizontal" id="createStandingInstructionForm" action="/demo/index.php/Standinginstruction/CreateStandingInstruction/2/2" method="post">    <div class="modal-body">
+    	    	<div class="control-group">
+	    	<label class="control-label required" for="StandingInstruction_transferType">Transfer Type <span class="required">*</span></label>	    	<div class="controls">
+	        	<select name="StandingInstruction[transferType]" id="StandingInstruction_transferType">
+<option value="">- Select Option -</option>
+<option value="1">Account Transfer</option>
+<option value="2" selected="selected">Loan Repayment</option>
+</select>            	<span class="help-inline error" id="StandingInstruction_transferType_em_" style="display: none"></span>            		        </div>
+	    </div>
+	    <div class="control-group">
+	    	<label class="control-label">Instruction Type</label>
+	    	<div class="controls">
+	        	<select disabled="disabled" name="StandingInstruction[instructionType]" id="StandingInstruction_instructionType">
+<option value="">- Select Option -</option>
+<option value="2" selected="selected">Dues</option>
+<option value="1">Fixed</option>
+</select>	        	<input id="hidden_StandingInstruction_instructionType" name="StandingInstruction[instructionType]" type="hidden" value="2" />	        </div>
+	    </div>
+	    <div class="control-group" style="display: none;">
+	    	<label class="control-label" for="StandingInstruction_amount">Amount</label>	        <div class="controls">
+	            <input name="StandingInstruction[amount]" id="StandingInstruction_amount" type="text" />	            <span class="help-inline error" id="StandingInstruction_amount_em_" style="display: none"></span>	        </div>
+		</div>
+		<div class="control-group" style="display: none;">
+	    	<label class="control-label" for="StandingInstruction_maximumIterations">Number of Payments</label>	        <div class="controls">
+	            <input name="StandingInstruction[maximumIterations]" id="StandingInstruction_maximumIterations" type="text" />	            <span class="help-inline error" id="StandingInstruction_maximumIterations_em_" style="display: none"></span>	        </div>
+		</div>
+        <div class="control-group">
+	    	<label class="control-label">From Account</label>
+	    	<div class="controls">
+	        	<span class="uneditable-input">Compulsory Savings 000000003</span>
+	        	<input name="StandingInstruction[fromAccountId]" id="StandingInstruction_fromAccountId" type="hidden" value="3" />	        </div>
+	    </div>
+	    <div class="control-group">
+        	<label class="control-label required" for="StandingInstruction_toAccountId">To Account <span class="required">*</span></label>            <div class="controls">
+            	            	<select name="StandingInstruction[toAccountId]" id="StandingInstruction_toAccountId">
+<option value="">- Select Option -</option>
+<option value="58">Flat Loan (weekly) 000000058</option>
+</select>                <span class="help-inline error" id="StandingInstruction_toAccountId_em_" style="display: none"></span>            </div>
+        </div>
+        <div class="control-group">
+		    <label class="control-label">Recurrence Type</label>
+		    <div class="controls">
+		    	<select disabled="disabled" name="StandingInstruction[recurrenceType]" id="StandingInstruction_recurrenceType">
+<option value="">- Select Option -</option>
+<option value="2" selected="selected">As Per Dues Recurrence</option>
+<option value="1">Periodic Recurrence</option>
+</select>		        <span class="help-inline error" id="StandingInstruction_recurrenceType_em_" style="display: none"></span>		        <input id="hidden_StandingInstruction_recurrenceType" name="StandingInstruction[recurrenceType]" type="hidden" value="2" />		    </div>
+		</div>
+		<div class="control-group" style="display: none;">
+		    <label class="control-label">Recurrence Interval And Frequency</label>
+		    <div class="controls">
+		    	<input class="span3" placeholder="Interval" name="StandingInstruction[recurrenceInterval]" id="StandingInstruction_recurrenceInterval" type="text" />		        <select class="span5" name="StandingInstruction[recurrenceFrequency]" id="StandingInstruction_recurrenceFrequency">
+<option value="">- Select Option -</option>
+<option value="0">Days</option>
+<option value="1">Weeks</option>
+<option value="2">Months</option>
+<option value="3">Years</option>
+</select>		        <span class="help-inline error" id="StandingInstruction_recurrenceInterval_em_" style="display: none"></span>		        <span class="help-inline error" id="StandingInstruction_recurrenceFrequency_em_" style="display: none"></span>		    </div>
+		</div>
+		<div class="control-group" style="display: none;">
+	    	<label class="control-label" for="StandingInstruction_recurrenceOnMonthDay">Recurrence On Month Day</label>	        <div class="controls">
+	            <input data-date-autoclose="1" name="StandingInstruction[recurrenceOnMonthDay]" id="StandingInstruction_recurrenceOnMonthDay" type="text" />	            <span class="help-inline error" id="StandingInstruction_recurrenceOnMonthDay_em_" style="display: none"></span>	        </div>
+		</div>
+            </div>
+    <div class="modal-footer">
+					<input name="StandingInstruction[toClientId]" id="StandingInstruction_toClientId" type="hidden" value="2" />					<input name="StandingInstruction[fromClientId]" id="StandingInstruction_fromClientId" type="hidden" value="2" />    	<input name="StandingInstruction[fromOfficeId]" id="StandingInstruction_fromOfficeId" type="hidden" value="2" />    	<input name="StandingInstruction[toOfficeId]" id="StandingInstruction_toOfficeId" type="hidden" value="2" />    	<input name="StandingInstruction[toAccountType]" id="StandingInstruction_toAccountType" type="hidden" value="1" />    	<input type="hidden" name="redirectToPage" value="/demo/index.php/Savings/SavingsAccount/3" />
+		        <button class="btn btn-primary"  type="submit">Create</button>
+
+        <a href="#" class="btn" data-dismiss="modal">Close</a>
+    </div>
+    </form></div>
+
+
+<script type="text/javascript">
+    $(function () {
+
+        var tempChargeList = [];
+
+
+        var charge = new Charge('4',
+            'Savings Inactivity Fee',
+            '100&nbsp;Flat',
+            'Inactivity Fee',
+            '100'
+        );
+
+        tempChargeList.push(charge);
+
+
+        var charge = new Charge('90',
+            'PassBook-Charge',
+            '200&nbsp;Flat',
+            'Specified Due Date',
+            '200'
+        );
+
+        tempChargeList.push(charge);
+
+
+
+
+        var savingAccount = new ViewSavingAccount({entityName:"savings",chargeList:tempChargeList});
+
+
+
+        $("#liSavings").addClass("active");
+
+        var fixDeposit = new FixedDepositChart({table:'.chart-table',viewMode:true});
+
+        if(window.location.hash){
+
+            //  $(window.location.hash).tab('show');
+            $("a[href='"+window.location.hash+"']").tab('show');
+            $("a[href='"+window.location.hash+"']").trigger('click');
+        }
+
+    });
+
+
+    $('a[id="transactions"]').on('shown', function (e) {
+        var TableTools1 = TableTools.fnGetInstance( 'transactionTable' );
+        if ( TableTools1 != null && TableTools1.fnResizeRequired() )
+        {
+            TableTools1.fnResizeButtons();
+        }
+    });
+
+
+
+</script>
+</div><!-- content -->
+                </div>
+            </div>
+            <hr />
+            <div id="footer">
+                <div class="container alignCenter">
+                    <!-- servername = demo-ireland02.musoniservices.com - 10216768  Bytes -->
+
+                    <p><a href='mailto:support@musonisystem.com'>Help</a> - <a href='mailto:support@musonisystem.com'>Support</a> - <a href='/demo/index.php/Site/Logout'>Logout</a> . <span class="muted credit">&copy; Musoni System 2019</span></p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div id="page-alert" class="hide">
+            <div class="row-fluid">
+                <div class="alert span6 offset3"><a href="#" class="close close-alert" >&times;</a>
+                    <span class="message"></span>
+                </div>
+            </div>
+        </div>
+    <script type="text/javascript" src="/mlite-frontend/assets/97f0df09/gridview/jquery.yiigridview.js?v=1570623052"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('#yw0').yiiGridView({'ajaxUpdate':['yw0'],'ajaxVar':'ajax','pagerClass':'pagination','loadingClass':'grid\x2Dview\x2Dloading','filterClass':'filters','tableClass':'items\x20table\x20table\x2Dstriped\x20table\x2Dbordered\x20table\x2Dcondensed','selectableRows':1,'enableHistory':false,'updateSelector':'\x7Bpage\x7D,\x20\x7Bsort\x7D','filterSelector':'\x7Bfilter\x7D'});
+jQuery('#cct_AdditionalSavingsForm-form').yiiactiveform({'validateOnSubmit':true,'afterValidate':survey.prototype.submit,'attributes':[{'id':'ASurvey_Comment1','inputID':'ASurvey_Comment1','errorID':'ASurvey_Comment1_em_','model':'ASurvey','name':'ASurvey\x5BComment1\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)!='') {
+
+if(value.length>65535) {
+	messages.push("Comment is too long (maximum is 65535 characters).");
+}
+
+}
+
+}}],'errorCss':'error'});
+jQuery('#cct_RaoulTest-form').yiiactiveform({'validateOnSubmit':true,'afterValidate':survey.prototype.submit,'attributes':[{'id':'ASurvey_First_Name1','inputID':'ASurvey_First_Name1','errorID':'ASurvey_First_Name1_em_','model':'ASurvey','name':'ASurvey\x5BFirst_Name1\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("First Name cannot be blank.");
+}
+
+
+if(jQuery.trim(value)!='') {
+
+if(value.length>25) {
+	messages.push("First Name is too long (maximum is 25 characters).");
+}
+
+}
+
+}}],'errorCss':'error'});
+jQuery('#cct_SurveyForm-form').yiiactiveform({'validateOnSubmit':true,'afterValidate':survey.prototype.submit,'attributes':[{'id':'ASurvey_Comment11','inputID':'ASurvey_Comment11','errorID':'ASurvey_Comment11_em_','model':'ASurvey','name':'ASurvey\x5BComment11\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)!='') {
+
+if(value.length>65535) {
+	messages.push("Comment is too long (maximum is 65535 characters).");
+}
+
+}
+
+}}],'errorCss':'error'});
+jQuery('#makeDepositForm').yiiactiveform({'validateOnSubmit':true,'afterValidate':makeDeposit,'attributes':[{'id':'SavingsDeposit_amount','inputID':'SavingsDeposit_amount','errorID':'SavingsDeposit_amount_em_','model':'SavingsDeposit','name':'SavingsDeposit\x5Bamount\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Amount cannot be blank.");
+}
+
+}},{'id':'SavingsDeposit_transactionDate','inputID':'SavingsDeposit_transactionDate','errorID':'SavingsDeposit_transactionDate_em_','model':'SavingsDeposit','name':'SavingsDeposit\x5BtransactionDate\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Transaction Date cannot be blank.");
+}
+
+}},{'id':'SavingsDeposit_paymentTypeId','inputID':'SavingsDeposit_paymentTypeId','errorID':'SavingsDeposit_paymentTypeId_em_','model':'SavingsDeposit','name':'SavingsDeposit\x5BpaymentTypeId\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Payment Type cannot be blank.");
+}
+
+
+if(jQuery.trim(value)!='') {
+
+if(!value.match(/^\s*[+-]?\d+\s*$/)) {
+	messages.push("Payment Type must be an integer.");
+}
+
+if(value<1) {
+	messages.push("Payment Type is too small (minimum is 1).");
+}
+
+}
+
+}},{'id':'SavingsDeposit_receiptNumber','inputID':'SavingsDeposit_receiptNumber','errorID':'SavingsDeposit_receiptNumber_em_','model':'SavingsDeposit','name':'SavingsDeposit\x5BreceiptNumber\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Receipt Number cannot be blank.");
+}
+
+}}],'errorCss':'error'});
+jQuery('#makeWithdrawalForm').yiiactiveform({'validateOnSubmit':true,'afterValidate':makeWithdrawal,'attributes':[{'id':'SavingsWithdrawal_amount','inputID':'SavingsWithdrawal_amount','errorID':'SavingsWithdrawal_amount_em_','model':'SavingsWithdrawal','name':'SavingsWithdrawal\x5Bamount\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Amount cannot be blank.");
+}
+
+}},{'id':'SavingsWithdrawal_transactionDate','inputID':'SavingsWithdrawal_transactionDate','errorID':'SavingsWithdrawal_transactionDate_em_','model':'SavingsWithdrawal','name':'SavingsWithdrawal\x5BtransactionDate\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Transaction Date cannot be blank.");
+}
+
+}},{'id':'SavingsWithdrawal_paymentTypeId','inputID':'SavingsWithdrawal_paymentTypeId','errorID':'SavingsWithdrawal_paymentTypeId_em_','model':'SavingsWithdrawal','name':'SavingsWithdrawal\x5BpaymentTypeId\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Payment Type cannot be blank.");
+}
+
+}},{'id':'SavingsWithdrawal_receiptNumber','inputID':'SavingsWithdrawal_receiptNumber','errorID':'SavingsWithdrawal_receiptNumber_em_','model':'SavingsWithdrawal','name':'SavingsWithdrawal\x5BreceiptNumber\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Receipt Number cannot be blank.");
+}
+
+}}],'errorCss':'error'});
+jQuery('#makeWriteoffForm').yiiactiveform({'validateOnSubmit':true,'afterValidate':makeWriteoff,'attributes':[{'id':'SavingsWithdrawal_amount','inputID':'SavingsWithdrawal_amount','errorID':'SavingsWithdrawal_amount_em_','model':'SavingsWithdrawal','name':'SavingsWithdrawal\x5Bamount\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Amount cannot be blank.");
+}
+
+}},{'id':'SavingsWithdrawal_transactionDate','inputID':'SavingsWithdrawal_transactionDate','errorID':'SavingsWithdrawal_transactionDate_em_','model':'SavingsWithdrawal','name':'SavingsWithdrawal\x5BtransactionDate\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Transaction Date cannot be blank.");
+}
+
+}},{'id':'SavingsWithdrawal_receiptNumber','inputID':'SavingsWithdrawal_receiptNumber','errorID':'SavingsWithdrawal_receiptNumber_em_','model':'SavingsWithdrawal','name':'SavingsWithdrawal\x5BreceiptNumber\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Receipt Number cannot be blank.");
+}
+
+}}],'errorCss':'error'});
+jQuery('#documentForm').yiiactiveform({'validateOnSubmit':true,'afterValidate':preview,'attributes':[{'id':'TemplateForm_id','inputID':'TemplateForm_id','errorID':'TemplateForm_id_em_','model':'TemplateForm','name':'TemplateForm\x5Bid\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Template cannot be blank.");
+}
+
+}}],'errorCss':'error'});
+jQuery('#closeSavingsAccountForm').yiiactiveform({'validateOnSubmit':true,'afterValidate':closeSavingsAccount,'attributes':[{'id':'CloseSavingsAccount_closeDate','inputID':'CloseSavingsAccount_closeDate','errorID':'CloseSavingsAccount_closeDate_em_','model':'CloseSavingsAccount','name':'CloseSavingsAccount\x5BcloseDate\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Close Date cannot be blank.");
+}
+
+}},{'id':'CloseSavingsAccount_note','inputID':'CloseSavingsAccount_note','errorID':'CloseSavingsAccount_note_em_','model':'CloseSavingsAccount','name':'CloseSavingsAccount\x5Bnote\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Note cannot be blank.");
+}
+
+}}],'errorCss':'error'});
+jQuery('#transferFundsForm').yiiactiveform({'validateOnSubmit':true,'afterValidate':transferFunds,'attributes':[{'id':'AccountTransfer_transferDate','inputID':'AccountTransfer_transferDate','errorID':'AccountTransfer_transferDate_em_','model':'AccountTransfer','name':'AccountTransfer\x5BtransferDate\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Transfer Date cannot be blank.");
+}
+
+}},{'id':'AccountTransfer_transferAmount','inputID':'AccountTransfer_transferAmount','errorID':'AccountTransfer_transferAmount_em_','model':'AccountTransfer','name':'AccountTransfer\x5BtransferAmount\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Transfer Amount cannot be blank.");
+}
+
+}},{'id':'AccountTransfer_transferDescription','inputID':'AccountTransfer_transferDescription','errorID':'AccountTransfer_transferDescription_em_','model':'AccountTransfer','name':'AccountTransfer\x5BtransferDescription\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Transfer Description cannot be blank.");
+}
+
+}}],'errorCss':'error'});
+jQuery('#createStandingInstructionForm').yiiactiveform({'validateOnSubmit':true,'attributes':[{'id':'StandingInstruction_transferType','inputID':'StandingInstruction_transferType','errorID':'StandingInstruction_transferType_em_','model':'StandingInstruction','name':'StandingInstruction\x5BtransferType\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Transfer Type cannot be blank.");
+}
+
+
+if(jQuery.trim(value)!='') {
+
+if(!value.match(/^\s*[+-]?\d+\s*$/)) {
+	messages.push("Transfer Type must be an integer.");
+}
+
+if(value<0) {
+	messages.push("Transfer Type is too small (minimum is 0).");
+}
+
+}
+
+}},{'id':'StandingInstruction_amount','inputID':'StandingInstruction_amount','errorID':'StandingInstruction_amount_em_','model':'StandingInstruction','name':'StandingInstruction\x5Bamount\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup'},{'id':'StandingInstruction_maximumIterations','inputID':'StandingInstruction_maximumIterations','errorID':'StandingInstruction_maximumIterations_em_','model':'StandingInstruction','name':'StandingInstruction\x5BmaximumIterations\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)!='') {
+
+if(!value.match(/^\s*[+-]?\d+\s*$/)) {
+	messages.push("Number of Payments must be an integer.");
+}
+
+if(value<0) {
+	messages.push("Number of Payments is too small (minimum is 0).");
+}
+
+}
+
+}},{'id':'StandingInstruction_toAccountId','inputID':'StandingInstruction_toAccountId','errorID':'StandingInstruction_toAccountId_em_','model':'StandingInstruction','name':'StandingInstruction\x5BtoAccountId\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("To Account cannot be blank.");
+}
+
+}},{'id':'StandingInstruction_recurrenceType','inputID':'StandingInstruction_recurrenceType','errorID':'StandingInstruction_recurrenceType_em_','model':'StandingInstruction','name':'StandingInstruction\x5BrecurrenceType\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Recurrence Type cannot be blank.");
+}
+
+
+if(jQuery.trim(value)!='') {
+
+if(!value.match(/^\s*[+-]?\d+\s*$/)) {
+	messages.push("Recurrence Type must be an integer.");
+}
+
+if(value<0) {
+	messages.push("Recurrence Type is too small (minimum is 0).");
+}
+
+}
+
+}},{'id':'StandingInstruction_recurrenceInterval','inputID':'StandingInstruction_recurrenceInterval','errorID':'StandingInstruction_recurrenceInterval_em_','model':'StandingInstruction','name':'StandingInstruction\x5BrecurrenceInterval\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)!='') {
+
+if(!value.match(/^\s*[+-]?\d+\s*$/)) {
+	messages.push("Recurrence Interval must be an integer.");
+}
+
+if(value<1) {
+	messages.push("Recurrence Interval is too small (minimum is 1).");
+}
+
+}
+
+}},{'id':'StandingInstruction_recurrenceFrequency','inputID':'StandingInstruction_recurrenceFrequency','errorID':'StandingInstruction_recurrenceFrequency_em_','model':'StandingInstruction','name':'StandingInstruction\x5BrecurrenceFrequency\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)!='') {
+
+if(!value.match(/^\s*[+-]?\d+\s*$/)) {
+	messages.push("Recurrence Frequency must be an integer.");
+}
+
+if(value<0) {
+	messages.push("Recurrence Frequency is too small (minimum is 0).");
+}
+
+}
+
+}},{'id':'StandingInstruction_recurrenceOnMonthDay','inputID':'StandingInstruction_recurrenceOnMonthDay','errorID':'StandingInstruction_recurrenceOnMonthDay_em_','model':'StandingInstruction','name':'StandingInstruction\x5BrecurrenceOnMonthDay\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup'}],'errorCss':'error'});
+jQuery('body').on('click','#lang_0',function(){jQuery.yii.submitForm(this,'',{});return false;});
+jQuery('body').on('click','#lang_1',function(){jQuery.yii.submitForm(this,'',{});return false;});
+jQuery('body').on('click','#lang_2',function(){jQuery.yii.submitForm(this,'',{});return false;});
+jQuery('body').on('click','#lang_3',function(){jQuery.yii.submitForm(this,'',{});return false;});
+jQuery('body').on('click','#lang_4',function(){jQuery.yii.submitForm(this,'',{});return false;});
+jQuery('body').on('click','#lang_5',function(){jQuery.yii.submitForm(this,'',{});return false;});
+jQuery('body').on('click','#lang_6',function(){jQuery.yii.submitForm(this,'',{});return false;});
+jQuery('#changePasswordForm').yiiactiveform({'validateOnSubmit':true,'afterValidate':editPassword,'attributes':[{'id':'ChangePasswordForm_currentPassword','inputID':'ChangePasswordForm_currentPassword','errorID':'ChangePasswordForm_currentPassword_em_','model':'ChangePasswordForm','name':'ChangePasswordForm\x5BcurrentPassword\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Current Password cannot be blank.");
+}
+
+}},{'id':'ChangePasswordForm_password','inputID':'ChangePasswordForm_password','errorID':'ChangePasswordForm_password_em_','model':'ChangePasswordForm','name':'ChangePasswordForm\x5Bpassword\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Password cannot be blank.");
+}
+
+
+if(value.length<6) {
+	messages.push("Password is too short (minimum is 6 characters).");
+}
+
+}},{'id':'ChangePasswordForm_repeatPassword','inputID':'ChangePasswordForm_repeatPassword','errorID':'ChangePasswordForm_repeatPassword_em_','model':'ChangePasswordForm','name':'ChangePasswordForm\x5BrepeatPassword\x5D','enableAjaxValidation':false,'inputContainer':'div.control\x2Dgroup','clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Repeat Password cannot be blank.");
+}
+
+
+if(value.length<6) {
+	messages.push("Repeat Password is too short (minimum is 6 characters).");
+}
+
+
+if(value!=jQuery('#ChangePasswordForm_password').val()) {
+	messages.push("Repeat Password must be repeated exactly.".replace('{compareValue}', jQuery('#ChangePasswordForm_password').val()));
+}
+
+}}],'errorCss':'error'});
+});
+/*]]>*/
+</script>
+</body>
+</html>
